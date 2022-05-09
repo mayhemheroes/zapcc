@@ -1,0 +1,6 @@
+project: rnshah9/zapcc
+target: zapcc
+
+cmds:
+  - cmd: /zapcc/build/bin/zapcc --config @@ /zapcc/build/bin/test.c
+    filepath: /test.cfg
