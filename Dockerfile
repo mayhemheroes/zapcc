@@ -1,9 +1,8 @@
-# Build Stage
-FROM --platform=linux/amd64 ubuntu:20.04 as builder
-# SHELL ["/bin/bash", "-c"]
+FROM --platform=linux/amd64 ubuntu:20.04 
+
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install  -y vim less man wget tar git gzip unzip make cmake software-properties-common
-RUN DEBIAN_FRONTEND=noninteractive apt-get install  -y ninja-build g++
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential ninja-build cmake
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y python
 
 ADD . /zapcc
 WORKDIR /zapcc/build
