@@ -2,5 +2,5 @@ project: zapcc
 target: zapcc
 
 cmds:
-  - cmd: /zapcc/build/bin/zapcc --config /test.cfg /zapcc/build/bin/test.c
-    filepath: /test.cfg
+  - cmd: /install/bin/zapcc --config f /zapcc/tools/clang/test/Import/direct/test.c
+    filepath: /install/bin/f.cfg
